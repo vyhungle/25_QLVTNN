@@ -1,0 +1,63 @@
+POST http://localhost:4000/api/sanpham/add
+Content-Type: application/json
+
+{
+    "TenSP":"Béc tưới nhỏ MS-80",
+    "DonGia":"45000",
+    "SoLuong":"0",
+    "NSX":"613f3a8ee6d9a9913134eae7",
+    "NCC":"613f3a0ae6d9a9913134eae4",
+    "TheLoai":"613f3b19e6d9a9913134eaea"
+}
+
+####
+PUT http://localhost:4000/api/sanpham/editSL/6140b9f985d2fb1bf0c413e2
+Content-Type: application/json
+
+{
+    "SoLuong":"10"
+}
+
+
+####
+DELETE  http://localhost:4000/api/sanpham/delete/613f40311261cb46901dd1b9
+Content-Type: application/json
+
+###
+GET  http://localhost:4000/api/sanpham/get
+
+
+###
+Post  http://localhost:4000/api/test/ncc
+Content-Type: application/json
+
+{
+    "Sdt": "098277652",
+    "Email": "email@gmail.com",
+    "DiaChi": "HCM",
+    "TenNCC": "Vật Tư Nông Nghiệp HCM - Công Ty TNHH Bách Nông HCM"
+}
+
+
+###
+Post  http://localhost:4000/api/test/nsx
+Content-Type: application/json
+
+{
+    "Sdt": "098277652",
+    "Email": "email@gmail.com",
+    "DiaChi": "HCM",
+    "TenNSX": "Công Ty TNHH Nông Sản DakLak"
+}
+
+###
+Post  http://localhost:4000/api/test/theloai
+Content-Type: application/json
+
+{
+    "TenLoai": "BÉC TƯỚI CÂY"
+}
+
+
+###
+GET  http://localhost:4000/api/test/theloai/get
